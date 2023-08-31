@@ -12,16 +12,13 @@
     />
 
     <title>Frontend Mentor | Interactive rating component</title>
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Rating state start -->
@@ -30,20 +27,18 @@
         <img src="images/icon-star.svg" alt="star" />
       </div>
       <div class="rating-text">
-        <h2 class="title">How did we do?</h2>
+        <h2 class="title-1">How did we do?</h2>
         <p class="description">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
       </div>
       <div class="rating">
-        <ul>
-          <li><button class="btn-nr">1</button></li>
-          <li><button class="btn-nr">2</button></li>
-          <li><button class="btn-nr">3</button></li>
-          <li><button class="btn-nr">4</button></li>
-          <li><button class="btn-nr">5</button></li>
-        </ul>
+        <button class="btn-nr">1</button>
+        <button class="btn-nr">2</button>
+        <button class="btn-nr">3</button>
+        <button class="btn-nr">4</button>
+        <button class="btn-nr">5</button>
       </div>
       <div class="submit-btn">Submit</div>
     </div>
@@ -55,14 +50,16 @@
       <div class="thankyou-image">
         <img src="images/illustration-thank-you.svg" alt="thankyou" />
       </div>
-      <div class="selection-btn">You selected X out of 5</div>
-    </div>
-    <div class="thankyou-text">
-      <h2>Thank you!</h2>
-      <p>
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!
-      </p>
+      <div class="selection">
+        You selected <span class="chosen-nr">X</span> out of 5
+      </div>
+      <div class="thankyou-text">
+        <h2 class="title-2">Thank you!</h2>
+        <p class="appreciation">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
     </div>
 
     <!-- Add rating here -->
@@ -76,5 +73,7 @@
         >. Coded by <a href="#">Lourdes Infante</a>.
       </div>
     </footer>
+
+    <script src="src/app.js"></script>
   </body>
 </html>
