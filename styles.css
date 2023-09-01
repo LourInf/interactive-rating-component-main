@@ -32,7 +32,7 @@ li {
   color: var(--White);
   background: linear-gradient(to bottom, var(--Dark-Blue), hsl(216, 12%, 12%));
   width: 380px;
-  height: 350px;
+  height: 370px;
   padding: 30px;
   border-radius: 28px;
   margin: 40px;
@@ -114,6 +114,10 @@ li {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+}
+
+.thankyou-card {
+  display: none;
 }
 
 .thankyou-image {
